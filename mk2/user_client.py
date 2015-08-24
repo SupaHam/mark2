@@ -260,9 +260,9 @@ class UI:
         for key in keys:
             if key in ('page up', 'page down'):
                 self.g_output.keypress((0, 16), key)
-            elif key == 'home':
+            elif key == 'meta home':
                 self.g_output.set_focus(0)
-            elif key == 'end':
+            elif key == 'meta end':
                 self.g_output.set_focus_valign("bottom")
                 self.g_output.set_focus(len(self.g_output_list) - 1, coming_from='above')
             elif key == 'meta left':
